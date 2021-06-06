@@ -89,7 +89,7 @@ namespace iBicha.TMPro
                 {
                     int spriteIndex = -1;
                     TMP_SpriteAsset spriteAsset = TMP_SpriteAsset
-                        .SearchForSpriteByUnicode(rootEmojiAsset, char.ConvertToUtf32(emojiText, 0), true, out spriteIndex);
+                       .SearchForSpriteByUnicode(rootEmojiAsset, (uint)char.ConvertToUtf32(emojiText, 0), true, out spriteIndex);
                     if (spriteAsset == null)
                     {
                         detectedEmojis.Add(emojiText);
@@ -147,7 +147,7 @@ namespace iBicha.TMPro
                 if(!string.IsNullOrEmpty(emojiTexture.Text)){
                     int spriteIndex = -1;
                     TMP_SpriteAsset spriteAsset = TMP_SpriteAsset
-                        .SearchForSpriteByUnicode(rootEmojiAsset, emojiTexture.Unicode, true, out spriteIndex);
+                        .SearchForSpriteByUnicode(rootEmojiAsset, (uint)emojiTexture.Unicode, true, out spriteIndex);
                     if (spriteAsset == null)
                     {
                         PushSprite(emojiTexture);
