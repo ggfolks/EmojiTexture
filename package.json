@@ -1,5 +1,5 @@
 {
-  "name": "com.github.ibicha",
+  "name": "com.github.ibicha.emojitexture",
   "displayName": "EmojiTexture",
   "description": "Automatically generates textures for Emojis using underlying OS.",
   "version": "1.0.0-preview.1",
@@ -25,7 +25,7 @@
     {
       "displayName": "Example",
       "description": "Emoji Demo",
-      "path": "Assets/EmojiTexture/Example"
+      "path": "Samples~"
     }
   ]
 }

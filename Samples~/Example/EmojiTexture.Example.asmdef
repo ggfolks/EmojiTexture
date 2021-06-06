@@ -1,0 +1,6 @@
+{
+    "name": "EmojiText.Example",
+    "references": [
+        "EmojiText"
+    ]
+}
